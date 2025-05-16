@@ -1,0 +1,9 @@
+:root {
+    --brown: #5a3e1b;
+    --light-brown: #7a6c5f;
+    --dark-brown: #3e2a17;
+    --gradient: linear-gradient(to right, #f8a14d, #c0660a);
+    --spacing: 40px;
+    --font: 'Doppio One', sans-serif;
+  }
+  

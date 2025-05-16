@@ -1,0 +1,93 @@
+/* src/Components/HowItWorks/HowItWorks.css */
+.how-it-works {
+    padding: 60px 100px;
+    background-color: #fdfaf6;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.how-it-works-heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Flex container for steps */
+.how-it-works-new-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: -40px;
+}
+
+/* Each step block */
+.new-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px; /* Fixed width for each step */
+    box-sizing: border-box;
+}
+.step-image {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.step-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-line-image {
+    width: 240px;  /* Adjust the size of the lines */
+    height: auto;
+    padding-top: 40px;
+}
+
+/* Label for each step */
+.step-label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    color: #34495e;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Description for each step */
+.step-description {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    color: #7f8c8d;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .how-it-works-new-steps {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .step-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .step-label {
+        font-size: 16px;
+    }
+
+    .step-description {
+        font-size: 12px;
+    }
+}

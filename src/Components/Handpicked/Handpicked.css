@@ -1,0 +1,92 @@
+.handpicked {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #fdfaf6;
+  color: #333;
+}
+
+.handpicked-title {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.handpicked-description {
+  font-size: 36px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #7f8c8d;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.collection-outer {
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.collection-inner {
+  position: relative;
+  height: auto;
+  width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img {
+  position: absolute;
+  height: 200px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img1 {
+  left: -520px;
+  z-index: 1;
+  transform: scale(1.95);
+}
+
+.img2 {
+  left: -260px;
+  z-index: 2;
+  transform: scale(2.275);
+}
+
+.img3 {
+  left: 0;
+  z-index: 3;
+  transform: scale(2.6);
+}
+
+.img4 {
+  left: 260px;
+  z-index: 2;
+  transform: scale(2.275);
+}
+
+.img5 {
+  left: 520px;
+  z-index: 1;
+  transform: scale(1.95);
+}
+
+.handpicked-message {
+  background-color: #fffaf3;
+  padding: 300px 20px 20px 100px;
+  text-align: center;
+  color: #555;
+}
+
+.handpicked-message p {
+  font-size: 32px;
+  line-height: 1.6;
+  margin: 0 auto 24px;
+  max-width: auto;
+  color: #6c7a89;
+}

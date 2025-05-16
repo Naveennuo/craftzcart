@@ -1,0 +1,23 @@
+.crafted-with {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdfaf6;
+    color: #333;
+  }
+  
+  .crafted-with-heading {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .crafted-with-subheading {
+    font-size: 36px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #7f8c8d;
+    max-width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }

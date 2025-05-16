@@ -1,0 +1,150 @@
+/* Hero.css */
+
+.hero-container {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--light-brown);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content-wrapper {
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.elements {
+  position: absolute;
+  bottom: 0;
+  width: 700px;
+  justify-content: center;
+  opacity: 0.08;  /* 8% opacity */
+  z-index: -1;  /* Place it at the bottom */
+}
+
+
+.hero-content {
+  text-align: left;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.hero-heading {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px 0;
+  line-height: 1.0;
+}
+
+.piece-image {
+  width: 100px;
+  height: auto;
+}
+
+.hero-subtext {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.download-section {
+  margin-top: 30px;
+}
+
+.download-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.store-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.store-icon {
+  width: 140px;
+  height: auto;
+}
+
+.right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  position: absolute;
+  z-index: 10;
+}
+
+.centered-logo {
+  width: 200px;
+  height: auto;
+  padding-top: 100px;
+}
+
+.image {
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 240px;
+  height: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image1 {
+  width: 280px;
+  height: 280px;
+  z-index: 2;
+}
+
+.logo-and-images-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image2,
+.image3 {
+  width: 220px;
+  height: 220px;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image, .hero-content {
+  animation: fadeIn 1s ease-out;
+}

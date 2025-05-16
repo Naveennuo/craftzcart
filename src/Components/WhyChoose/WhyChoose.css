@@ -1,0 +1,124 @@
+.why-choose {
+    padding: 60px 100px;
+    background-color: #fdfaf6;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .why-choose-heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 70px; /* Default font size for larger screens */
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  
+  /* Responsive font size for heading */
+  @media (max-width: 1200px) {
+    .why-choose-heading {
+      font-size: 60px; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .why-choose-heading {
+      font-size: 50px; /* Further adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .why-choose-heading {
+      font-size: 40px; /* Reduce font size for tablets and mobile devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-choose-heading {
+      font-size: 30px; /* Smallest font size for mobile devices */
+    }
+  }
+  
+  .why-choose-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 50px; /* 50px gap between cards */
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .why-choose-card {
+    flex: 1 1 calc(25% - 37.5px); /* 4 boxes in 1 row with 50px gaps */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    height: auto;
+    aspect-ratio: 3/4;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    min-width: 200px; /* Prevent shrinking too much */
+  }
+  
+  .why-choose-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Updated card-content with transparent background and gradient */
+  .card-content {
+    background: linear-gradient(to right, #FFA34A, #BA5C00); /* Gradient from left to right */
+    opacity: 1; /* Full opacity */
+    border-top-left-radius: 125px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    font-size: 30px;
+    color: #34495e;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  /* Responsive adjustments for .why-choose-card */
+  @media (max-width: 1200px) {
+    .why-choose-card {
+      flex: 1 1 calc(25% - 37.5px);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .why-choose-card {
+      flex: 1 1 calc(33.33% - 33.33px); /* 3 boxes per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .why-choose-card {
+      flex: 1 1 calc(50% - 25px); /* 2 boxes per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-choose-card {
+      flex: 1 1 calc(100% - 25px); /* 1 box per row */
+    }
+  
+    .why-choose {
+      padding: 40px 20px; /* Reduce padding on small screens */
+    }
+  }
+  
