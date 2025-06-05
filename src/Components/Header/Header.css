@@ -1,6 +1,3 @@
-/* Header.css */
-
-/* CSS Variables */
 :root {
   --brown: #5a3e1b;
   --light-brown: #7a6c5f;
@@ -21,26 +18,37 @@
   right: 0;
   z-index: 1000;
   transition: top 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   background-color: transparent;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
+/* Blur & shadow on scroll or mobile menu open */
 .header.scrolled {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo-section {
+.logo-toggle {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  width: 100%;
 }
 
 .logo {
   height: auto;
 }
 
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-brown);
+}
+
+/* Navigation links container */
 .nav {
   display: flex;
   align-items: center;
@@ -48,11 +56,33 @@
   width: auto;
 }
 
+.nav.mobile {
+  display: none;
+  width: 100%;
+}
+
+.nav.mobile.open {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation links */
 .nav-link {
   text-decoration: none;
   color: var(--light-brown);
   font-size: 22px;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover only on desktop */
+@media (min-width: 768px) {
+  .nav-link:hover {
+    color: var(--brown);
+  }
 }
 
 .contact-link {
@@ -62,6 +92,20 @@
   border-radius: 8px;
 }
 
-.nav-link:hover {
-  color: var(--brown);
+@media (min-width: 768px) {
+  .logo-toggle {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
 }
+
